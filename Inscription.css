@@ -75,7 +75,7 @@
 #header .nav-list ul li:hover a {
 	color: crimson;
 }
-#header .hamburger {
+#header .Star {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
@@ -90,24 +90,24 @@
 	transform: scale(0.8);
 	margin-right: 20px;
 }
-#header .hamburger:after {
+#header .Star:after {
 	position: absolute;
 	content: '';
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
 	border: 3px solid white;
-	animation: hamburger_puls 1s ease infinite;
+	animation: Star_puls 1s ease infinite;
 }
-#header .hamburger .bar {
+#header .Star .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
 	background-color: white;
 	z-index: -1;
 }
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
+#header .Star .bar::after,
+#header .Star .bar::before {
 	content: '';
 	position: absolute;
 	height: 100%;
@@ -117,16 +117,16 @@
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
-#header .hamburger .bar::after {
+#header .Star .bar::after {
 	top: 8px;
 }
-#header .hamburger .bar::before {
+#header .Star .bar::before {
 	bottom: 8px;
 }
-#header .hamburger.active .bar::before {
+#header .Star.active .bar::before {
 	bottom: 0;
 }
-#header .hamburger.active .bar::after {
+#header .Star.active .bar::after {
 	top: 0;
 }
 body {
