@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="contact.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contactez Nous</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3SL0sibVcOQVnN" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="Js/contact.js"></script>
 <body>
     <section id="header">
         <div class="header container">
           <div class="nav-bar">
             <div class="brand">
               <a href="#hero">
-                <h1><span>W</span>eb <span>D</span>esign</h1>
+                <h1><span>La</span><span>Sou</span>rce</h1>
               </a>
             </div>
             <div class="nav-list">
@@ -23,65 +24,61 @@
               </div>
               <ul>
                 <li><a href="Home.html" data-after="Home">Accueil</a></li>
-            <li><a href="service.html" data-after="Service">Services</a></li>
-            <li><a href="project.html" data-after="Projects">Projet</a></li>
-            
-            <li><a href="contact.html" data-after="Contact">Contact</a></li>
+                <li><a href="service.html" data-after="Service">Services</a></li>
+                <li><a href="project.html" data-after="Projects">Projet</a></li>
+                <li><a href="contact.html" data-after="Contact">Contact</a></li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
+    </section>
     <section class="contact">
-       
-        </div>
         <div class="container">
             <div class="contactInfo">
                 <div class="box">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt=""/></div>
                     <div class="text">
-                        <h3>Address</h3>
+                        <p>Address</p>
                         <p>801 Aviation Pkwy, Ottawa, ON K1K 4R3</p>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></i></div>
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt=""/></div>
                     <div class="text">
-                        <h3>Phone</h3>
+                        <p>Phone</p>
                         <p>+1 524-653-1122</p>
                         <p>+1 814-522-9696</p>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></i></div>
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt=""/></div>
                     <div class="text">
-                        <h3>Email</h3>
+                        <p>Email</p>
                         <p>2710673@collegelacite.ca</p>
                         <p>2711273@collegelacite.ca</p>
                     </div>
                 </div>
             </div>
             <div class="contactForm">
-                <form>
+                <form onsubmit="Envoyermail(); reset(); return false;">
                     <div class="content">
                         <h2>Contactez-Nous</h2>
-                        <p>Veuillez fournir plus de details</p>
+                        <p>Veuillez fournir plus de détails</p>
                     </div>                 
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Nom et Prenom</span>
+                        <label for="Nom">Nom et Prénom :</label>
+                        <input type="text" id="Nom" name="Nom" title="Nom et Prénom" placeholder="Nom et Prénom" required="required">
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Email</span>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required="required">
                     </div>
                     <div class="inputBox">
-                       <textarea required="required"></textarea>
-                        <span>Commentaire...</span>
+                        <label for="message">Commentaire :</label>
+                        <textarea id="message" name="message" required="required"></textarea>
                     </div>
                     <div class="inputBox">
                         <input type="submit" name="" value="Envoyer">
-                        
                     </div>
                 </form>
             </div>
