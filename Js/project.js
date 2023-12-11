@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Fonction pour changer l'image du projet au survol
     const projectImg = document.querySelector(".project-img img");
     const originalImgSrc = projectImg.src; // Enregistrez l'URL de l'image d'origine
-    const secondImgSrc = "./img/info.png"; // Remplacez l'URL par votre deuxième image
+    const secondImgSrc = "../img/info.png"; // Remplacez l'URL par votre deuxième image
 
     projectImg.addEventListener("mouseover", function () {
         projectImg.src = secondImgSrc;
@@ -55,6 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         projectImg.src = originalImgSrc;
     });
 
-    // Ajoutez plus de fonctionnalités interactives ici en fonction de vos besoins
+   
 });
 

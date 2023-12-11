@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
 
       // Validation du nom et prénom (exemple simple)
-      if (nomInput.value.length < 2 || nomInput.value.length > 30) {
-          alert('Le nom doit contenir entre 2 et 30 caractères.');
+      if (nomInput.value.length < 3 || nomInput.value.length > 12) {
+          alert('Le nom doit contenir entre 2 et 12 caractères.');
           return;
       }
 
-      if (prenomInput.value.length < 2 || prenomInput.value.length > 30) {
-          alert('Le prénom doit contenir entre 2 et 30 caractères.');
+      if (prenomInput.value.length < 3 || prenomInput.value.length > 12) {
+          alert('Le prénom doit contenir entre 2 et 12 caractères.');
           return;
       }
 
@@ -36,4 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
       alert('Formulaire d\'inscription soumis.');
       location.reload();
   });
+   // Fonction pour afficher une alerte au clic sur l'en-tête
+   const brandLink = document.querySelector(".brand a");
+   brandLink.addEventListener("click", function (event) {
+       event.preventDefault();
+       alert("Vous avez cliqué sur le logo !");
+   });
 });

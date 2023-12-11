@@ -8,28 +8,30 @@ document.addEventListener('DOMContentLoaded', function() {
     if (produitsLink) {
         produitsLink.addEventListener('click', function(event) {
             event.preventDefault();
-            alert('Vous avez cliqué sur Voir Nos Produits!');
+            alert('Voulez-vous Voir Nos Produits!');
         });
     }
  
     if (commandeLink) {
         commandeLink.addEventListener('click', function(event) {
             event.preventDefault();
-            alert('Vous avez cliqué sur Passer Une Commande!');
+            alert('Voulez-vous Passer Une Commande!');
         });
     }
  
     if (serviceLink) {
         serviceLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            alert('Vous avez cliqué sur Services Techniques!');
+          event.preventDefault();
+          if (confirm('Voulez-vous entrer en contact avec le Service Technique?')) {
+            window.location.href = 'formulaire.html';
+          }
         });
-    }
+      }
  
     if (autreLink) {
         autreLink.addEventListener('click', function(event) {
             event.preventDefault();
-            alert('Vous avez cliqué sur Autres!');
+            alert('Voulez-vous voir d\'Autres articles');
         });
     }
       // Fonction pour changer la couleur du titre au survol
@@ -52,4 +54,26 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
           console.log("Élément .section-title non trouvé");
       }
+       // Fonction pour afficher une alerte au clic sur l'en-tête
+  const brandLink = document.querySelector(".brand a");
+  brandLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      alert("Vous avez cliqué sur le logo !");
+      
+  });
+   // Sélection de tous les paragraphes
+   const elements = document.querySelectorAll('p');
+ 
+   elements.forEach(element => {
+       element.addEventListener('mouseover', function() {
+           this.style.color = 'blue';
+           this.style.fontSize = '1.8em';
+       });
+ 
+       element.addEventListener('mouseout', function() {
+           this.style.color = '';
+           this.style.fontSize = '';
+       });
+    });
+  
 });
