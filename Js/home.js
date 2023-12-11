@@ -3,23 +3,39 @@ document.addEventListener('DOMContentLoaded', function() {
     function ajusterStyles() {
         var largeurEcran = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var pointDeRupture = 768;
+<<<<<<< HEAD
  
         // Utilisation des classes CSS pour le responsive design
         document.body.classList.toggle('petit-ecran', largeurEcran < pointDeRupture);
     }
  
+=======
+
+        // Utiliser des classes CSS pour le responsive design
+        document.body.classList.toggle('petit-ecran', largeurEcran < pointDeRupture);
+    }
+
+>>>>>>> e2c3c93f519aa15c717e886a5900617ce45bf88c
     // Effet d'ombre sur les sections au défilement
     function ajouterEffetOmbre() {
         var scrollTop = window.scrollY;
         var sections = document.querySelectorAll('section');
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> e2c3c93f519aa15c717e886a5900617ce45bf88c
         sections.forEach(function(section) {
             var offsetTop = section.offsetTop;
             var isVisible = scrollTop >= offsetTop && scrollTop < offsetTop + section.offsetHeight;
             section.classList.toggle('ombre-active', isVisible);
         });
     }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> e2c3c93f519aa15c717e886a5900617ce45bf88c
     // Interactions avec l'utilisateur
     function ajouterInteractionsUtilisateur() {
         const links = document.querySelectorAll('a');
@@ -28,7 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('mouseout', () => link.classList.remove('hover'));
         });
     }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> e2c3c93f519aa15c717e886a5900617ce45bf88c
     // Interactions au double clic
     function ajouterInteractionsDoubleClic() {
         const body = document.querySelector('body');
@@ -43,7 +63,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> e2c3c93f519aa15c717e886a5900617ce45bf88c
     // Exécution des fonctions
     window.addEventListener('load', function() {
         ajusterStyles();
@@ -53,3 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', ajusterStyles);
     window.addEventListener('scroll', ajouterEffetOmbre);
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> e2c3c93f519aa15c717e886a5900617ce45bf88c
