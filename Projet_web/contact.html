@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contactez Nous</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+    <script src="Js/contact.js"></script>
+    
+<body>
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>La</span><span>Sou</span>rce</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="Star">
+                <div class="bar"></div>
+              </div>
+              <ul>
+                <li><a href="Home.html" data-after="Home">Accueil</a></li>
+                <li><a href="service.html" data-after="Service">Services</a></li>
+                <li><a href="project.html" data-after="Projects">Projet</a></li>
+                <li><a href="contact.html" data-after="Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt=""/></div>
+                    <div class="text">
+                        <p>Address</p>
+                        <p>801 Aviation Pkwy, Ottawa, ON K1K 4R3</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt=""/></div>
+                    <div class="text">
+                        <p>Phone</p>
+                        <p>+1 524-653-1122</p>
+                        <p>+1 814-522-9696</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt=""/></div>
+                    <div class="text">
+                        <p>Email</p>
+                        <p>2710673@collegelacite.ca</p>
+                        <p>2711273@collegelacite.ca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form onsubmit="Envoyermail(); reset(); return false;">
+                    <div class="content">
+                        <h2>Contactez-Nous</h2>
+                        <p>Veuillez fournir plus de détails</p>
+                    </div>                 
+                    <div class="inputBox">
+                        <label for="Nom">Nom et Prénom :</label>
+                        <input type="text" id="Nom" name="Nom" title="Nom et Prénom" placeholder="Nom et Prénom" required="required">
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required="required">
+                    </div>
+                    <div class="inputBox">
+                        <label for="message">Commentaire :</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
